@@ -37,7 +37,7 @@ public class CatalogController {
 
         var responseDto = new ResponseDTO("상품 조회 성공", responseCatalogs).getResponseEntity();
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(responseDto);
+        return ResponseEntity.status(HttpStatus.OK).body(responseDto);
     }
 
 
