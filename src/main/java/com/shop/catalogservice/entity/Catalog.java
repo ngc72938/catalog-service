@@ -13,6 +13,7 @@ import java.io.Serializable;
 public class Catalog extends Time implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "catalog_id")
     private long id;
 
     @Column(nullable = false, length = 120, unique = true)
