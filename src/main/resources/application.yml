@@ -30,3 +30,11 @@ eureka:
 logging:
   level:
     com.shop.catalogservice: debug
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: info, refresh, health, beans
